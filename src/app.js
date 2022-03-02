@@ -1,36 +1,44 @@
-console.log("Merhaba Kodlama.io")
-
-//JS type safe değildir
-let dolarBugun = 9.30
-
-let dolarDun = 9.20
-dolarDun = "9.20"
-{
-    let dolarDun = 9.10
+let isim="Yağmur"
+let student={id:1,name:"Alican"}
+//console.log(student);
+function save(puan=10,ogrenci) {
+    //console.log(ogrenci.name +" : "+ puan)    
 }
-
-console.log(dolarDun)
-
-const euroDun = 11.2
-//euroDun = 11
-
-console.log(euroDun)
-
-//array
-//camelCasing
-//PascalCasing
-let konutKredileri = ["Konut kredisi","Emlak Konut Kredisi","Kamu Konut Kredisi","Özel Konut Kredisi"]
-
-console.log("<ul>")
-for(let i = 0;i<konutKredileri.length;i++){
-    console.log("<li>"+konutKredileri[i]+"</li>")
+save(undefined,student);
+let students=["Engin Demiroğ","Yağmur","Caner","Kübra"]
+//console.log(students)
+let students2=[students[3],{id:5,name:"sema"},"Ankara",{city:"Karabük"},15]
+//console.log(students2)
+//rest konusu
+let showProducts=function (id,...products) {
+    // console.log(id)
+    // console.log(products)
 }
-console.log("</ul>")
+//console.log(typeof showProducts)
+//showProducts(10 ,"Elma","Armut","Karpuz")
+//spread konusu
+let points=[4,8,1,26,68,80]
+// console.log(...points)
+// console.log(Math.max(...points))
+// console.log(..."ABC","D","EFG","H")
+//Destructuring
+let populations=[10,20,30,[1000,8000]]
+let[small,medium,high,[veryHigh,maximum]]=populations
+console.log(small)
+console.log(medium)
+console.log(high)
+console.log(veryHigh)
+console.log(maximum)
+//Array i Destructuring etmek
+function someFunction([small1],number) {
+    console.log(small1,number)
+}
+someFunction(populations,2)
 
-{/* <ul>
-    <li>Konut kredisi</li>
-    <li>Emlak Konut Kredisi</li>
-    <li>Kamu Konut Kredisi</li>
-</ul> */}
-
-console.log(konutKredileri)
+//Objeyi Destructuring etmek
+let category={id:1,name:"İçecek"}
+console.log(category.id)
+console.log(category["name"])//farklı bir kullanım
+let {id,name}=category
+console.log(id)
+console.log(name)

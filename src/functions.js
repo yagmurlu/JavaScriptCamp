@@ -1,10 +1,11 @@
-function addToCart(quantity,productName="Elma") {
+ function addToCart(quantity,productName="Elma")//default değer 
+ {
     console.log("Sepete eklendi : ürün : " 
     + productName + " adet : " + quantity)
 }
 
 //addToCart()
-addToCart(10)
+addToCart(10,"kiraz")
 //addToCart(15)
 
 let sayHello = ()=>{
