@@ -1,5 +1,1 @@
-# advancedJavaScript
-Starter kit for my JS Courses
-"# JavaScriptCamp" 
-"# JavaScriptCamp" 
-"# JavaScriptCamp" 
+Hi! This is JavaScript Camp.
