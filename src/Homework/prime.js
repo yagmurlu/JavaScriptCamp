@@ -1,13 +1,18 @@
-function findPrime(...num) {
-    for (let i = 0; i < num.length; i++) {
-      for (let j = 2; j < num[i]; j++) {
-          
-          if (num[i]%j == 0) {
-              return false;
-          }
-          
-      }
-      return console.log(num[i]);
+
+function asalBul() {
+    for (var num = 1; num <= 1000; num++) {
+
+        var prime = true;
+        for (var i = 2; i <= num; i++) {
+            if (num%i===0 && i!==num) {
+                prime = false;
+            }
+        }
+        if (prime === true) {
+            console.log(num);
+        }
     }
+    
 }
-findPrime(1,2,3)
+asalBul()
+
