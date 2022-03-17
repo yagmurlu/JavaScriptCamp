@@ -12,16 +12,9 @@ cart.map(product=>{
     console.log("<li>"+product.productName + " : " 
     + product.unitPrice * product.quantity+"</li>")
 })
-console.log("</ul>")
-
-let total = cart.reduce((acc,product)=>acc+ product.unitPrice * product.quantity,0)
-
-//23.00 Dersteyiz
+let total=cart.reduce((acc,product)=>acc+product.unitPrice*product.quantity,0)
 console.log(total)
-
-
-let quantityOver2 = cart.filter(product=>product.quantity>2)
-
+let quantityOver2=cart.filter(product=>product.quantity>2)
 console.log(quantityOver2)
 
 function addToCart(sepet) {
@@ -42,4 +35,3 @@ function sayiTopla(number) {
 sayiTopla(sayi)
 console.log(sayi)
 
-//23.00 Dersteyiz

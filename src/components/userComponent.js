@@ -3,6 +3,7 @@ import Customer from "../models/customer.js"
 import User from "../models/user.js"
 import UserService from "../services/userService.js"
 
+
 console.log("User component yüklendi")
 
 let logger1 = new MongoLogger()

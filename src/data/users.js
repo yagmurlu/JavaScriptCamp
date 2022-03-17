@@ -57,4 +57,3 @@ export const users = [
     }
 ]
 
-//23.05 Dersteyiz
